@@ -17,7 +17,7 @@
   <meta name="description" content="Opps, there is a dinosaur!">
   <meta name="author" content="Hearfirey">
   <meta name="keywords" content="">
-  <title>欢迎来到Heartfirey的博客！ - Heartfirey&#39;s Blog</title>
+  <title>Heartfirey&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-11-01 00:00" pubdate>
-        2020年11月1日 凌晨
+      <time datetime="2020-11-04 20:48" pubdate>
+        2020年11月4日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      153 字
+      744 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      10
        分钟
     </span>
   
@@ -217,35 +217,99 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">欢迎来到Heartfirey的博客！</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="Welcome！"><a href="#Welcome！" class="headerlink" title="Welcome！"></a>Welcome！</h1><h2 id="Heartfirey"><a href="#Heartfirey" class="headerlink" title="Heartfirey"></a>Heartfirey</h2><blockquote>
-<p> 目前正在维护的项目：</p>
-</blockquote>
-<blockquote>
-<p>已经停止维护的项目：</p>
-<p>1.Elect Media Control Center</p>
-<p>这是一个多媒体管理系统，本打算融入FluentDesign的设计规范，并添加局域网互联的功能，但是由于时间原因，鸽了鸽了</p>
-<p>2.图书管理系统</p>
-<p>只是暂时停止更细，以后会考虑扩大开发规模并融入更友好的设计，但是，，，先鸽了…</p>
-<p>3.参与开发的其他Space Technology项目，由于工作室解散，这些项目随机废除并不再开源</p>
-<p>4.学生管理系统</p>
-<p>写着玩的。。。</p>
-</blockquote>
+              <h1 id="ACWing-1112-迷宫-DFS"><a href="#ACWing-1112-迷宫-DFS" class="headerlink" title="ACWing.1112 迷宫-DFS"></a>ACWing.1112 迷宫-DFS</h1><h2 id="原题目描述"><a href="#原题目描述" class="headerlink" title="原题目描述"></a>原题目描述</h2><p>一天Extense在森林里探险的时候不小心走入了一个迷宫，迷宫可以看成是由 n∗n 的格点组成，每个格点只有2种状态，<code>.</code>和<code>#</code>，前者表示可以通行后者表示不能通行。</p>
+<p>同时当Extense处在某个格点时，他只能移动到东南西北(或者说上下左右)四个方向之一的相邻格点上，Extense想要从点A走到点B，问在不走出迷宫的情况下能不能办到。</p>
+<p>如果起点或者终点有一个不能通行(为#)，则看成无法办到。</p>
+<p><strong>注意</strong>：A、B不一定是两个不同的点。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第1行是测试数据的组数 k，后面跟着 k 组输入。</p>
+<p>每组测试数据的第1行是一个正整数 n，表示迷宫的规模是 n∗n 的。</p>
+<p>接下来是一个 n∗n 的矩阵，矩阵中的元素为<code>.</code>或者<code>#</code>。</p>
+<p>再接下来一行是 4 个整数 ha,la,hb,lb，描述 A 处在第 ha 行, 第 la 列，B 处在第 hb 行, 第 lb 列。</p>
+<p>注意到 ha,la,hb,lb全部是从 0 开始计数的。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>k行，每行输出对应一个输入。</p>
+<p>能办到则输出“YES”，否则输出“NO”。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code class="hljs yaml"><span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-string">.##</span>
+<span class="hljs-string">..#</span>
+<span class="hljs-comment">#..</span>
+<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
+<span class="hljs-number">5</span>
+<span class="hljs-string">.....</span>
+<span class="hljs-comment">###.#</span>
+<span class="hljs-string">..#..</span>
+<span class="hljs-comment">###..</span>
+<span class="hljs-string">...#.</span>
+<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4</span> <span class="hljs-number">0</span></code></pre>
+
+<h4 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h4><pre><code class="hljs yaml"><span class="hljs-literal">YES</span>
+<span class="hljs-literal">NO</span></code></pre>
+
+<h2 id="DFS解题思路"><a href="#DFS解题思路" class="headerlink" title="DFS解题思路"></a>DFS解题思路</h2><p>题目给出了由‘#’和‘.’组成的矩阵，可以直接用字符数组储存，也可以在读入的时候转成对应的数字储存在整数数组里，注意n的范围，DFS的过程也很简单，向东西南北递归搜，边界条件写好别溢出就OK</p>
+<p>起点和终点的可行性可以单独判断直接输出，不进行DFS</p>
+<pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">int</span> graph[<span class="hljs-number">101</span>][<span class="hljs-number">101</span>];
+<span class="hljs-keyword">int</span> n = <span class="hljs-number">0</span>;
+
+<span class="hljs-comment">//把字符图转成数字图储存起来</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">get_graph</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++)&#123;
+            <span class="hljs-keyword">char</span> a;
+            <span class="hljs-built_in">cin</span> &gt;&gt; a;
+            <span class="hljs-keyword">if</span>(a == <span class="hljs-string">&#x27;.&#x27;</span>) graph[i][j] = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a == <span class="hljs-string">&#x27;#&#x27;</span>) graph[i][j] = <span class="hljs-number">0</span>;
+        &#125;
+    &#125;
+&#125;
+
+<span class="hljs-comment">//爆搜一下，你就知道</span>
+<span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x1, <span class="hljs-keyword">int</span> y1, <span class="hljs-keyword">int</span> x2, <span class="hljs-keyword">int</span> y2)</span></span>&#123;
+    graph[x1][y1] = <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">if</span>(x1 == x2 &amp;&amp; y1 == y2) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">int</span> a[<span class="hljs-number">4</span>] = &#123;<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>&#125;, b[<span class="hljs-number">4</span>] = &#123;<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>&#125;;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)&#123;
+        <span class="hljs-keyword">if</span>(x1 + a[i] &gt;= <span class="hljs-number">0</span> &amp;&amp; x1 + a[i] &lt; n &amp;&amp; y1 + b[i] &gt;= <span class="hljs-number">0</span> &amp;&amp; y1 + b[i] &lt; n &amp;&amp; graph[x1 + a[i]][y1 + b[i]] == <span class="hljs-number">1</span>)
+            <span class="hljs-keyword">if</span>(dfs(x1 + a[i], y1 + b[i], x2, y2)) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    &#125;
+    graph[x1][y1] = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+&#125;
+
+<span class="hljs-comment">//题解</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-keyword">int</span> x1, y1, x2, y2;
+    <span class="hljs-built_in">cin</span> &gt;&gt; x1 &gt;&gt; y1 &gt;&gt; x2 &gt;&gt; y2;
+    <span class="hljs-keyword">if</span>(!graph[x1][y1] || !graph[x2][y2]) <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;NO&quot;</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(dfs(x1, y1, x2, y2)) <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;YES&quot;</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;NO&quot;</span>);
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>;
+    <span class="hljs-built_in">cin</span> &gt;&gt; k;
+    <span class="hljs-comment">//读入K组数据并给出相应结果</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; k; i++)&#123;
+        <span class="hljs-built_in">cin</span> &gt;&gt; n;
+        get_graph();
+        solve();
+    &#125;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+&#125;
+</code></pre>
+
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/Default/">Default</a>
-                    
-                  </div>
                 
               </div>
               
@@ -256,15 +320,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/04/ACWing.1113%20%E7%BA%A2%E4%B8%8E%E9%BB%91-DFS+BFS%E9%A2%98%E8%A7%A3/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/11/04/ACWing.1116%20%E9%A9%AC%E8%B5%B0%E6%97%A5(DFS)%E9%A2%98%E8%A7%A3/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -280,8 +344,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://example.com/2020/11/01/hello-world/';
-        this.page.identifier = '/2020/11/01/hello-world/';
+        this.page.url = 'http://example.com/2020/11/04/ACWing.1112%20%E8%BF%B7%E5%AE%AB-DFS/';
+        this.page.identifier = '/2020/11/04/ACWing.1112%20%E8%BF%B7%E5%AE%AB-DFS/';
       };
       function loadDisqus() {
         (function () {
@@ -427,7 +491,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "欢迎来到Heartfirey的博客！&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

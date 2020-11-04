@@ -17,7 +17,7 @@
   <meta name="description" content="Opps, there is a dinosaur!">
   <meta name="author" content="Hearfirey">
   <meta name="keywords" content="">
-  <title>欢迎来到Heartfirey的博客！ - Heartfirey&#39;s Blog</title>
+  <title>Heartfirey&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-11-01 00:00" pubdate>
-        2020年11月1日 凌晨
+      <time datetime="2020-11-04 20:48" pubdate>
+        2020年11月4日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      153 字
+      473 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      6
        分钟
     </span>
   
@@ -217,35 +217,63 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">欢迎来到Heartfirey的博客！</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="Welcome！"><a href="#Welcome！" class="headerlink" title="Welcome！"></a>Welcome！</h1><h2 id="Heartfirey"><a href="#Heartfirey" class="headerlink" title="Heartfirey"></a>Heartfirey</h2><blockquote>
-<p> 目前正在维护的项目：</p>
-</blockquote>
-<blockquote>
-<p>已经停止维护的项目：</p>
-<p>1.Elect Media Control Center</p>
-<p>这是一个多媒体管理系统，本打算融入FluentDesign的设计规范，并添加局域网互联的功能，但是由于时间原因，鸽了鸽了</p>
-<p>2.图书管理系统</p>
-<p>只是暂时停止更细，以后会考虑扩大开发规模并融入更友好的设计，但是，，，先鸽了…</p>
-<p>3.参与开发的其他Space Technology项目，由于工作室解散，这些项目随机废除并不再开源</p>
-<p>4.学生管理系统</p>
-<p>写着玩的。。。</p>
-</blockquote>
+              <h1 id="ACWing-1116-马走日-DFS-题解"><a href="#ACWing-1116-马走日-DFS-题解" class="headerlink" title="ACWing.1116 马走日(DFS)题解"></a>ACWing.1116 马走日(DFS)题解</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>马在中国象棋以日字形规则移动。</p>
+<p>请编写一段程序，给定 n∗m 大小的棋盘，以及马的初始位置 (x，y)，要求不能重复经过棋盘上的同一个点，计算马可以有多少途径遍历棋盘上的所有点。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行为整数 T，表示测试数据组数。</p>
+<p>每一组测试数据包含一行，为四个整数，分别为棋盘的大小以及初始位置坐标 n,m,x,y。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>每组测试数据包含一行，为一个整数，表示马能遍历棋盘的途径总数，若无法遍历棋盘上的所有点则输出 0。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤T≤9,<br>1≤m,n≤9,<br>0≤x≤n−1,<br>0≤y≤m−1</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code class="hljs basic"><span class="hljs-number">1</span>
+<span class="hljs-symbol">5 </span><span class="hljs-number">4</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span></code></pre>
+
+<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code class="hljs angelscript"><span class="hljs-number">32</span></code></pre>
+
+<h2 id="题解-DFS"><a href="#题解-DFS" class="headerlink" title="题解(DFS)"></a>题解(DFS)</h2><p>​        分析：马只能走“日”字形，那么移动一次只能有八种情况出现，如图所示。</p>
+<p>​        很显然，是DFS模型的变形，把可以到达的邻接点距离写成数组，再分析题目，由于要寻找多条道路，故每次寻路完毕需要进行回溯。贴上代码。</p>
+<pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> xa x + a[i]</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> yb y + b[i]</span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">int</span> m, n, x, y, cnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> a[]=&#123;<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">-1</span>,<span class="hljs-number">-2</span>,<span class="hljs-number">-2</span>,<span class="hljs-number">-1</span>&#125;;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> b[]=&#123;<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">-1</span>,<span class="hljs-number">-2</span>,<span class="hljs-number">-2</span>,<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>&#125;;
+<span class="hljs-keyword">bool</span> g[<span class="hljs-number">10</span>][<span class="hljs-number">10</span>];
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> dc)</span></span>&#123;
+    <span class="hljs-keyword">if</span>(dc == <span class="hljs-number">0</span>)&#123;
+        cnt ++;
+        <span class="hljs-keyword">return</span>;
+    &#125;
+    g[x][y] = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++)&#123;
+        <span class="hljs-keyword">if</span>(xa &gt;= <span class="hljs-number">0</span> &amp;&amp; xa &lt; m &amp;&amp; yb &gt;= <span class="hljs-number">0</span> &amp;&amp; yb &lt; n &amp;&amp; !g[xa][yb]) 
+            dfs(xa, yb, dc - <span class="hljs-number">1</span>);
+    &#125;
+    g[x][y] = <span class="hljs-literal">false</span>;
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>; 
+    <span class="hljs-built_in">cin</span> &gt;&gt; t;
+    <span class="hljs-keyword">while</span>(t--)&#123;
+        <span class="hljs-built_in">cin</span> &gt;&gt; m &gt;&gt; n &gt;&gt; x &gt;&gt; y;
+        dfs(x, y, n * m - <span class="hljs-number">1</span>);
+        <span class="hljs-built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="hljs-built_in">endl</span>;
+        cnt = <span class="hljs-number">0</span>;
+    &#125;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+&#125;</code></pre>
+
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/Default/">Default</a>
-                    
-                  </div>
                 
               </div>
               
@@ -256,7 +284,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/04/ACWing.1113%20%E7%BA%A2%E4%B8%8E%E9%BB%91-DFS+BFS%E9%A2%98%E8%A7%A3/">
+                      <a href="/2020/11/04/ACWing.1112%20%E8%BF%B7%E5%AE%AB-DFS/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -265,6 +293,12 @@
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/11/04/ACWing.1113%20%E7%BA%A2%E4%B8%8E%E9%BB%91-DFS+BFS%E9%A2%98%E8%A7%A3/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -280,8 +314,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://example.com/2020/11/01/hello-world/';
-        this.page.identifier = '/2020/11/01/hello-world/';
+        this.page.url = 'http://example.com/2020/11/04/ACWing.1116%20%E9%A9%AC%E8%B5%B0%E6%97%A5(DFS)%E9%A2%98%E8%A7%A3/';
+        this.page.identifier = '/2020/11/04/ACWing.1116%20%E9%A9%AC%E8%B5%B0%E6%97%A5(DFS)%E9%A2%98%E8%A7%A3/';
       };
       function loadDisqus() {
         (function () {
@@ -427,7 +461,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "欢迎来到Heartfirey的博客！&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
