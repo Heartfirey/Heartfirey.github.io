@@ -17,7 +17,7 @@
   <meta name="description" content="Opps, there is a dinosaur!">
   <meta name="author" content="Hearfirey">
   <meta name="keywords" content="">
-  <title>20级人工智能1班编程能力测试(已结束) - Heartfirey&#39;s Blog</title>
+  <title>ACWing.168 生日蛋糕 - Heartfirey&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-11-05 12:50" pubdate>
-        2020年11月5日 下午
+      <time datetime="2020-11-08 21:53" pubdate>
+        2020年11月8日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      172 字
+      1.2k 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      16
        分钟
     </span>
   
@@ -217,33 +217,86 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">20级人工智能1班编程能力测试(已结束)</h1>
+            <h1 style="display: none">ACWing.168 生日蛋糕</h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="欢迎来到20级人工智能1班编程能力测试"><a href="#欢迎来到20级人工智能1班编程能力测试" class="headerlink" title="欢迎来到20级人工智能1班编程能力测试!"></a>欢迎来到20级人工智能1班编程能力测试!</h1><p><img src="/images/bh.png" srcset="/img/loading.gif" alt="upload successful"></p>
-<blockquote>
-<p>相关文件要求请查阅群通知，最新试题下载链接：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iWsh9i2e17c">https://wwe.lanzous.com/iWsh9i2e17c</a></p>
-</blockquote>
-<h2 id="比赛状态：已更新解题报告！"><a href="#比赛状态：已更新解题报告！" class="headerlink" title="比赛状态：已更新解题报告！"></a>比赛状态：已更新解题报告！</h2><p>试题保持开放，供同学们学习参考</p>
-<blockquote>
-<p>解题报告：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iF1Rvi2ylxi">https://wwe.lanzous.com/iF1Rvi2ylxi</a><br>试题密码：JXNU2020rgzn1blzzq</p>
-</blockquote>
-<h2 id="有问题？请联系我们！："><a href="#有问题？请联系我们！：" class="headerlink" title="有问题？请联系我们！："></a>有问题？请联系我们！：</h2><blockquote>
-<p>方式1: 直接联系我：QQ: 1754989931<br>方式2: 联系出题人：QQ: 3556507114<br>！ 请注意：直接联系出题人可能得不到回复！</p>
-</blockquote>
-<h2 id="比赛开始时间：2020-11-05-13：00"><a href="#比赛开始时间：2020-11-05-13：00" class="headerlink" title="比赛开始时间：2020.11.05 13：00"></a>比赛开始时间：2020.11.05 13：00</h2><h2 id="比赛结束时间：2020-11-05-17：00"><a href="#比赛结束时间：2020-11-05-17：00" class="headerlink" title="比赛结束时间：2020.11.05 17：00"></a>比赛结束时间：2020.11.05 17：00</h2><h2 id="参与对象：全体同学（自愿）"><a href="#参与对象：全体同学（自愿）" class="headerlink" title="参与对象：全体同学（自愿）"></a>参与对象：全体同学（自愿）</h2><h2 id="比赛奖励：考虑申请活动并发放绩点"><a href="#比赛奖励：考虑申请活动并发放绩点" class="headerlink" title="比赛奖励：考虑申请活动并发放绩点"></a>比赛奖励：考虑申请活动并发放绩点</h2>
+              <h1 id="ACWing-168-生日蛋糕"><a href="#ACWing-168-生日蛋糕" class="headerlink" title="ACWing.168 生日蛋糕"></a>ACWing.168 生日蛋糕</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>7月17日是Mr.W的生日，ACM-THU为此要制作一个体积为Nπ的M层生日蛋糕，每层都是一个圆柱体。</p>
+<p>设从下往上数第i层蛋糕是半径为Ri, 高度为Hi的圆柱。</p>
+<p>当 i &lt; M 时，要求 Ri &gt; Ri+1 且 Hi &gt; Hi+1。</p>
+<p>由于要在蛋糕上抹奶油，为尽可能节约经费，我们希望蛋糕外表面（最下一层的下底面除外）的面积Q最小。</p>
+<p>令Q = Sπ ，请编程对给出的N和M，找出蛋糕的制作方案（适当的Ri和Hi的值），使S最小。</p>
+<p>除Q外，以上所有数据皆为正整数 。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入包含两行，第一行为整数N（N &lt;= 10000），表示待制作的蛋糕的体积为Nπ。</p>
+<p>第二行为整数M(M &lt;= 20)，表示蛋糕的层数为M。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出仅一行，是一个正整数S（若无解则S = 0）。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤N≤10000.<br>1≤M≤20</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code class="hljs angelscript"><span class="hljs-number">100</span>
+<span class="hljs-number">2</span></code></pre>
+
+<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code class="hljs angelscript"><span class="hljs-number">68</span></code></pre>
+
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>来自yxc大佬的思路，摘录自<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43964401/article/details/109230943">https://blog.csdn.net/qq_43964401/article/details/109230943</a></p>
+<ol>
+<li>将自上而下的各层蛋糕编号为1-m，题目要求我们设计一个m层蛋糕，下层的蛋糕比上层的蛋糕半径和高度都要大，并且总的体积为n，求最小的表面积。设第i层蛋糕的半径是Ri，高度是Hi，半径和高度都是整数。有Ri &lt; Ri+1,Hi &lt; Hi+1，根据题目要求，我们下面先忽略体积和表面积公式中的π。由于最上层的蛋糕半径和高度都要是正整数，所以R1和H1至少是1，R2要大于R1，至少是2，由此可得，第i层蛋糕的半径和高度至少是i。蛋糕体积公式为sum(Ri<em>Ri</em>Hi)，表面积公式为Rm<em>Rm + sum(2Ri</em>Hi)，也就是最下层蛋糕的底面积加上各层蛋糕的侧面积。</li>
+<li>考虑剪枝：搜索顺序：自底向上搜，并且先枚举R再枚举H，因为体积为N，如果能够更快的逼近N，那么分支数就会少，所以根据体积公式R<em>R</em>H，可知R对于体积的变化率更大。同理也要自底向上搜。<ol>
+<li>考虑一下每一层R和H的枚举范围，因为R和H都是正整数，并且层数已知为M，所以第一层R和H至少为1，即第u层R和H至少为u，此为下限。由题意R和H从下往上是严格单调递减的，所以R和H要小于等于Ru+1和Hu+1，并且假设第m层到第u层已经递归搜索到的体积为V， 根据N - V &gt;= Ru * Ru * H，H最小为1，则 Ru 也要 &lt;= sqrt(N - V) 。 同理可得 H 要 &lt;= （ N - V) / Ru / Ru。</li>
+<li>最优性和可行性剪枝，设mins[i]表示1到i层表面积的最小值，minv[i]表示1到i层体积的最小值，则mins[i] = mins[i-1] + 2* i * i，因为第i层高度和半径都至少是i，minv[i] = minv[i-1] + i * i * i，第m层到u层的体积V， 面积S 。 需要满足 minv[u] + v &lt;= M ， mins[u] + s &lt; ans。</li>
+<li>最难想的一个最优性剪枝，考虑下从第1层到第k层的体积和表面积的表达式，S = sum(2*Ri*Hi)，V = sum(Ri*Ri*Hi)，则S = sum(2*Ri*Hi*Rk+1 / Rk+1) &gt; 1 / Rk+1 * sum(2*Ri*Ri*Hi ) = 2 / Rk+1 * sum(Ri*Ri*Hi) = 2*V / Rk+1，sum表示i从1到k求和。从第m层到第u层已有的表面积是s，从第1层到第u层的表面积一定超过2*V/Ru+1，从第1层到第u层剩下的体积是n - v，所以当s + 2*（n-v）/ Ru+1 &gt;= ans时,s + S &gt; ans，一定不是最优解，所以可以剪枝。</li>
+</ol>
+</li>
+</ol>
+<h2 id="代码与实现"><a href="#代码与实现" class="headerlink" title="代码与实现"></a>代码与实现</h2><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cmath&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">25</span>, INF = <span class="hljs-number">1e9</span>;
+
+<span class="hljs-keyword">int</span> n, m;
+<span class="hljs-keyword">int</span> R[N], H[N];
+<span class="hljs-keyword">int</span> minv[N], mins[N];
+<span class="hljs-keyword">int</span> ans = INF;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> u, <span class="hljs-keyword">int</span> v, <span class="hljs-keyword">int</span> s)</span></span>&#123;
+    <span class="hljs-keyword">if</span>(v + minv[u] &gt; n) <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">if</span>(s + mins[u] &gt; ans) <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">if</span>(s + <span class="hljs-number">2</span> * (n - v) / R[u + <span class="hljs-number">1</span>] &gt;= ans) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">if</span>(!u)&#123;
+        <span class="hljs-keyword">if</span>(n == v) ans = s;
+        <span class="hljs-keyword">return</span>;
+    &#125;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> r = min((<span class="hljs-keyword">int</span>)<span class="hljs-built_in">sqrt</span>(n - v), R[u + <span class="hljs-number">1</span>] - <span class="hljs-number">1</span>); r &gt;= u; r--)&#123;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> h = min((n - v) / r / r, H[u + <span class="hljs-number">1</span>] - <span class="hljs-number">1</span>); h &gt;= u; h--)&#123;
+            <span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">if</span>(u == m) t = r * r;
+            R[u] = r, H[u] = h;
+            dfs(u - <span class="hljs-number">1</span>, v + r * r * h, s + <span class="hljs-number">2</span> * r * h + t);
+        &#125;
+    &#125;
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;
+    <span class="hljs-keyword">if</span>(n == m)&#123;
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    &#125;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= m; i++)&#123;
+        minv[i] = minv[i - <span class="hljs-number">1</span>] + i * i * i;
+        mins[i] = mins[i - <span class="hljs-number">1</span>] + <span class="hljs-number">2</span> * i * i;
+    &#125;
+    R[m + <span class="hljs-number">1</span>] = H[m + <span class="hljs-number">1</span>] = INF;
+    dfs(m, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;
+&#125;</code></pre>
+
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E7%8F%AD%E7%BA%A7/">班级</a>
-                    
-                  </div>
                 
               </div>
               
@@ -254,9 +307,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/08/ACWing-165-%E5%B0%8F%E7%8C%AB%E7%88%AC%E5%B1%B1-DFS%E5%89%AA%E6%9E%9D/">
+                      <a href="/2020/11/08/ACWING-1118-%E5%88%86%E6%88%90%E4%BA%92%E8%B4%A8%E7%BB%84-DFS/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ACWing.165 小猫爬山 DFS剪枝</span>
+                        <span class="hidden-mobile">ACWING.1118 分成互质组 DFS</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -264,8 +317,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/11/05/hello-world/">
-                        <span class="hidden-mobile">欢迎来到Heartfirey的博客！</span>
+                      <a href="/2020/11/08/ACWing-167-%E6%9C%A8%E6%A3%92-DFS-%E5%89%AA%E6%9E%9D/">
+                        <span class="hidden-mobile">ACWing.167 木棒 DFS+剪枝</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -284,8 +337,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://example.com/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
-        this.page.identifier = '/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
+        this.page.url = 'http://example.com/2020/11/08/ACWing-168-%E7%94%9F%E6%97%A5%E8%9B%8B%E7%B3%95/';
+        this.page.identifier = '/2020/11/08/ACWing-168-%E7%94%9F%E6%97%A5%E8%9B%8B%E7%B3%95/';
       };
       function loadDisqus() {
         (function () {
@@ -431,7 +484,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "20级人工智能1班编程能力测试(已结束)&nbsp;",
+        "ACWing.168 生日蛋糕&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

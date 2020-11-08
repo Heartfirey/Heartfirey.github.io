@@ -17,7 +17,7 @@
   <meta name="description" content="Opps, there is a dinosaur!">
   <meta name="author" content="Hearfirey">
   <meta name="keywords" content="">
-  <title>20级人工智能1班编程能力测试(已结束) - Heartfirey&#39;s Blog</title>
+  <title>ACWing.165 小猫爬山 DFS剪枝 - Heartfirey&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-11-05 12:50" pubdate>
-        2020年11月5日 下午
+      <time datetime="2020-11-08 21:51" pubdate>
+        2020年11月8日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      172 字
+      894 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      10
        分钟
     </span>
   
@@ -217,33 +217,99 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">20级人工智能1班编程能力测试(已结束)</h1>
+            <h1 style="display: none">ACWing.165 小猫爬山 DFS剪枝</h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="欢迎来到20级人工智能1班编程能力测试"><a href="#欢迎来到20级人工智能1班编程能力测试" class="headerlink" title="欢迎来到20级人工智能1班编程能力测试!"></a>欢迎来到20级人工智能1班编程能力测试!</h1><p><img src="/images/bh.png" srcset="/img/loading.gif" alt="upload successful"></p>
+              <h1 id="ACWing-165-小猫爬山-DFS剪枝"><a href="#ACWing-165-小猫爬山-DFS剪枝" class="headerlink" title="ACWing.165 小猫爬山 DFS剪枝"></a>ACWing.165 小猫爬山 DFS剪枝</h1><p>翰翰和达达饲养了N只小猫，这天，小猫们要去爬山。</p>
+<p>经历了千辛万苦，小猫们终于爬上了山顶，但是疲倦的它们再也不想徒步走下山了（呜咕&gt;_&lt;）。</p>
+<p>翰翰和达达只好花钱让它们坐索道下山。</p>
+<p>索道上的缆车最大承重量为W，而N只小猫的重量分别是C1、C2……CN。</p>
+<p>当然，每辆缆车上的小猫的重量之和不能超过W。</p>
+<p>每租用一辆缆车，翰翰和达达就要付1美元，所以他们想知道，最少需要付多少美元才能把这N只小猫都运送下山？</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第1行：包含两个用空格隔开的整数，N和W。</p>
+<p>第2..N+1行：每行一个整数，其中第i+1行的整数表示第i只小猫的重量Ci。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一个整数，表示最少需要多少美元，也就是最少需要多少辆缆车。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤N≤18,<br>1≤Ci≤W≤108</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre><code class="hljs basic"><span class="hljs-symbol">5 </span><span class="hljs-number">1996</span>
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">1994</span>
+<span class="hljs-number">12</span>
+<span class="hljs-number">29</span></code></pre>
+
+<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre><code class="hljs angelscript"><span class="hljs-number">2</span></code></pre>
+
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>首先分析这道题，有点像贪心，但是用搜索解决要更简单一些，首先需要准备的工作如下：</p>
+<ol>
+<li><p>一个数组“cat”， 用于存放妹纸小猫的体重</p>
+</li>
+<li><p>一个数组“car”， 表示每辆缆车，元素的值表示对应缆车内放置的小猫的体重(载客量)</p>
 <blockquote>
-<p>相关文件要求请查阅群通知，最新试题下载链接：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iWsh9i2e17c">https://wwe.lanzous.com/iWsh9i2e17c</a></p>
+<p>为了方便，这里我用容器表示数组，实现对缆车选择的动态模拟，同时可以减少使用的状态变量数目</p>
 </blockquote>
-<h2 id="比赛状态：已更新解题报告！"><a href="#比赛状态：已更新解题报告！" class="headerlink" title="比赛状态：已更新解题报告！"></a>比赛状态：已更新解题报告！</h2><p>试题保持开放，供同学们学习参考</p>
-<blockquote>
-<p>解题报告：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iF1Rvi2ylxi">https://wwe.lanzous.com/iF1Rvi2ylxi</a><br>试题密码：JXNU2020rgzn1blzzq</p>
-</blockquote>
-<h2 id="有问题？请联系我们！："><a href="#有问题？请联系我们！：" class="headerlink" title="有问题？请联系我们！："></a>有问题？请联系我们！：</h2><blockquote>
-<p>方式1: 直接联系我：QQ: 1754989931<br>方式2: 联系出题人：QQ: 3556507114<br>！ 请注意：直接联系出题人可能得不到回复！</p>
-</blockquote>
-<h2 id="比赛开始时间：2020-11-05-13：00"><a href="#比赛开始时间：2020-11-05-13：00" class="headerlink" title="比赛开始时间：2020.11.05 13：00"></a>比赛开始时间：2020.11.05 13：00</h2><h2 id="比赛结束时间：2020-11-05-17：00"><a href="#比赛结束时间：2020-11-05-17：00" class="headerlink" title="比赛结束时间：2020.11.05 17：00"></a>比赛结束时间：2020.11.05 17：00</h2><h2 id="参与对象：全体同学（自愿）"><a href="#参与对象：全体同学（自愿）" class="headerlink" title="参与对象：全体同学（自愿）"></a>参与对象：全体同学（自愿）</h2><h2 id="比赛奖励：考虑申请活动并发放绩点"><a href="#比赛奖励：考虑申请活动并发放绩点" class="headerlink" title="比赛奖励：考虑申请活动并发放绩点"></a>比赛奖励：考虑申请活动并发放绩点</h2>
+</li>
+<li><p>变量ans：用于记录最少需要的缆车数目</p>
+</li>
+<li><p>变量n, w：按题目要求读入的量</p>
+</li>
+</ol>
+<p>接下来分析解题的思路，本题主要关注的状态量有：已经运送的小猫共多少只，已经租用多少辆缆车，每辆车的当前载重量，深搜的执行分析如下：</p>
+<p>对于本体的搜索，参数只需要传入当前的小猫编号即可</p>
+<ol>
+<li>从递归的角度考虑，在每次递归开始时需要对递归终止的条件进行判断，当小猫编号与总数量相等时，对最少需要的缆车数进行更新；</li>
+<li>遍历每辆缆车，寻找能放下小猫的缆车。如果能放入，递归进行下一只小猫，此处记得恢复现场</li>
+<li>对于放不下的情况、第一次搜索（没有创建任何缆车），新建一辆缆车并放入小猫，继续递归搜索，同样记得恢复现场</li>
+<li>剪枝优化：本体的剪枝优化思路相对比较简单，只需要在每次递归开始判断一下当前的方案是否比之前的方案更优，如果不就直接放弃这种方案return掉</li>
+</ol>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">int</span> n = <span class="hljs-number">0</span>, w = <span class="hljs-number">0</span>, ans = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">int</span> *cat;
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; car;
+
+<span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">cmp</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> &amp; a, <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> &amp; b)</span></span>&#123;
+    <span class="hljs-keyword">return</span> a &gt; b;
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> now)</span></span>&#123;
+    <span class="hljs-keyword">if</span>(car.size() &gt;= ans) <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">if</span>(now == n)&#123;
+        ans = min(ans, (<span class="hljs-keyword">int</span>)car.size());
+        <span class="hljs-keyword">return</span>;
+    &#125;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; car.size(); i++)&#123;
+        <span class="hljs-keyword">if</span>(car[i] + cat[now] &lt;= w)&#123;
+            car[i] += cat[now];
+            dfs(now + <span class="hljs-number">1</span>);
+            car[i] -= cat[now];
+        &#125;
+    &#125;
+    car.push_back(cat[now]);
+    dfs(now + <span class="hljs-number">1</span>);
+    car.pop_back();
+&#125;
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; w;
+    cat = (<span class="hljs-keyword">int</span> *)<span class="hljs-built_in">malloc</span>(n * <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>));
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;cat[i]);
+    sort(cat, cat + n, cmp);
+    ans = n;
+    dfs(<span class="hljs-number">0</span>);
+    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;
+    system(<span class="hljs-string">&quot;pause&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+&#125;</code></pre>
+
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E7%8F%AD%E7%BA%A7/">班级</a>
-                    
-                  </div>
                 
               </div>
               
@@ -254,9 +320,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/08/ACWing-165-%E5%B0%8F%E7%8C%AB%E7%88%AC%E5%B1%B1-DFS%E5%89%AA%E6%9E%9D/">
+                      <a href="/2020/11/08/ACWing-166-%E6%95%B0%E7%8B%AC/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ACWing.165 小猫爬山 DFS剪枝</span>
+                        <span class="hidden-mobile">ACWing.166 数独</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -264,8 +330,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/11/05/hello-world/">
-                        <span class="hidden-mobile">欢迎来到Heartfirey的博客！</span>
+                      <a href="/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+                        <span class="hidden-mobile">20级人工智能1班编程能力测试(已结束)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -284,8 +350,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://example.com/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
-        this.page.identifier = '/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
+        this.page.url = 'http://example.com/2020/11/08/ACWing-165-%E5%B0%8F%E7%8C%AB%E7%88%AC%E5%B1%B1-DFS%E5%89%AA%E6%9E%9D/';
+        this.page.identifier = '/2020/11/08/ACWing-165-%E5%B0%8F%E7%8C%AB%E7%88%AC%E5%B1%B1-DFS%E5%89%AA%E6%9E%9D/';
       };
       function loadDisqus() {
         (function () {
@@ -431,7 +497,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "20级人工智能1班编程能力测试(已结束)&nbsp;",
+        "ACWing.165 小猫爬山 DFS剪枝&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

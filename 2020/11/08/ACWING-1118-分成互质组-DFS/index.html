@@ -17,7 +17,7 @@
   <meta name="description" content="Opps, there is a dinosaur!">
   <meta name="author" content="Hearfirey">
   <meta name="keywords" content="">
-  <title>20级人工智能1班编程能力测试(已结束) - Heartfirey&#39;s Blog</title>
+  <title>ACWING.1118 分成互质组 DFS - Heartfirey&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-11-05 12:50" pubdate>
-        2020年11月5日 下午
+      <time datetime="2020-11-08 21:53" pubdate>
+        2020年11月8日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      172 字
+      537 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      7
        分钟
     </span>
   
@@ -217,33 +217,77 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">20级人工智能1班编程能力测试(已结束)</h1>
+            <h1 style="display: none">ACWING.1118 分成互质组 DFS</h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="欢迎来到20级人工智能1班编程能力测试"><a href="#欢迎来到20级人工智能1班编程能力测试" class="headerlink" title="欢迎来到20级人工智能1班编程能力测试!"></a>欢迎来到20级人工智能1班编程能力测试!</h1><p><img src="/images/bh.png" srcset="/img/loading.gif" alt="upload successful"></p>
-<blockquote>
-<p>相关文件要求请查阅群通知，最新试题下载链接：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iWsh9i2e17c">https://wwe.lanzous.com/iWsh9i2e17c</a></p>
-</blockquote>
-<h2 id="比赛状态：已更新解题报告！"><a href="#比赛状态：已更新解题报告！" class="headerlink" title="比赛状态：已更新解题报告！"></a>比赛状态：已更新解题报告！</h2><p>试题保持开放，供同学们学习参考</p>
-<blockquote>
-<p>解题报告：<a target="_blank" rel="noopener" href="https://wwe.lanzous.com/iF1Rvi2ylxi">https://wwe.lanzous.com/iF1Rvi2ylxi</a><br>试题密码：JXNU2020rgzn1blzzq</p>
-</blockquote>
-<h2 id="有问题？请联系我们！："><a href="#有问题？请联系我们！：" class="headerlink" title="有问题？请联系我们！："></a>有问题？请联系我们！：</h2><blockquote>
-<p>方式1: 直接联系我：QQ: 1754989931<br>方式2: 联系出题人：QQ: 3556507114<br>！ 请注意：直接联系出题人可能得不到回复！</p>
-</blockquote>
-<h2 id="比赛开始时间：2020-11-05-13：00"><a href="#比赛开始时间：2020-11-05-13：00" class="headerlink" title="比赛开始时间：2020.11.05 13：00"></a>比赛开始时间：2020.11.05 13：00</h2><h2 id="比赛结束时间：2020-11-05-17：00"><a href="#比赛结束时间：2020-11-05-17：00" class="headerlink" title="比赛结束时间：2020.11.05 17：00"></a>比赛结束时间：2020.11.05 17：00</h2><h2 id="参与对象：全体同学（自愿）"><a href="#参与对象：全体同学（自愿）" class="headerlink" title="参与对象：全体同学（自愿）"></a>参与对象：全体同学（自愿）</h2><h2 id="比赛奖励：考虑申请活动并发放绩点"><a href="#比赛奖励：考虑申请活动并发放绩点" class="headerlink" title="比赛奖励：考虑申请活动并发放绩点"></a>比赛奖励：考虑申请活动并发放绩点</h2>
+              <h1 id="ACWING-1118-分成互质组-DFS"><a href="#ACWING-1118-分成互质组-DFS" class="headerlink" title="ACWING.1118 分成互质组 DFS"></a>ACWING.1118 分成互质组 DFS</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定 n 个正整数，将它们分组，使得每组中任意两个数互质。至少要分成多少个组？</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行是一个正整数 n。</p>
+<p>第二行是 n 个不大于10000的正整数。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一个正整数，即最少需要的组数。</p>
+<p>数据范围</p>
+<p>1≤n≤10</p>
+<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code class="hljs basic"><span class="hljs-number">6</span>
+<span class="hljs-symbol">14 </span><span class="hljs-number">20</span> <span class="hljs-number">33</span> <span class="hljs-number">117</span> <span class="hljs-number">143</span> <span class="hljs-number">175</span></code></pre>
+
+<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code class="hljs angelscript"><span class="hljs-number">3</span></code></pre>
+
+<h2 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h2><p>给定n个数字分成互质组，那么考虑最坏的情况，要分成n组(n个数均不互质)。因为题目的数据量并不大，可以采用DFS解决，具体思路如下：</p>
+<p>预备工作：准备一个数组存输入数据，准备一个容器，用于存不同的组，准备一个检索函数，可以检索指定分组内是否存在与目的数字重合的</p>
+<ol>
+<li>开始DFS：首先是递归终止条件，判断是否搜到末尾，搜到末尾则更新组数计数的值，返回；</li>
+<li>继续：每次在已有分组中从头开始搜索，用检索函数判断当前数字是否可以加入分组，若可以，加入后递归向下一个数字搜索</li>
+<li>新建分组：考虑组数为0的情况、找不到可以加入组的情况，应该设置创建新分组的情况，加入新分组后，同样递归向后搜索。</li>
+</ol>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">11</span>;
+<span class="hljs-keyword">int</span> n, p[N], cnt, ans = N;
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; num[N];
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">gcd</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span></span>&#123;
+    <span class="hljs-keyword">return</span> y ? gcd(y, x % y) : x;
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">check</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> t)</span></span>&#123;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; num[t].size(); i++)&#123;
+        <span class="hljs-keyword">if</span> (gcd(x, num[t][i]) &gt; <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    &#125;
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> now)</span></span>
+<span class="hljs-function"></span>&#123;
+    <span class="hljs-keyword">if</span> (now == n)&#123;
+        ans = min(ans,  cnt);
+        <span class="hljs-keyword">return</span>;
+    &#125;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;  cnt; i++)&#123;
+        <span class="hljs-keyword">if</span> (check(p[now], i))&#123;
+            num[now].push_back(p[now]);
+            dfs(now + <span class="hljs-number">1</span>);
+            num[i].pop_back();
+        &#125;
+    &#125;
+    num[cnt++].push_back(p[u]);
+    dfs(now + <span class="hljs-number">1</span>);
+    num[--cnt].pop_back(); 
+&#125;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) <span class="hljs-built_in">cin</span> &gt;&gt; p[i];
+    dfs(<span class="hljs-number">0</span>);
+    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+&#125;</code></pre>
+
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E7%8F%AD%E7%BA%A7/">班级</a>
-                    
-                  </div>
                 
               </div>
               
@@ -254,18 +298,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/08/ACWing-165-%E5%B0%8F%E7%8C%AB%E7%88%AC%E5%B1%B1-DFS%E5%89%AA%E6%9E%9D/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ACWing.165 小猫爬山 DFS剪枝</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/11/05/hello-world/">
-                        <span class="hidden-mobile">欢迎来到Heartfirey的博客！</span>
+                      <a href="/2020/11/08/ACWing-168-%E7%94%9F%E6%97%A5%E8%9B%8B%E7%B3%95/">
+                        <span class="hidden-mobile">ACWing.168 生日蛋糕</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -284,8 +322,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://example.com/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
-        this.page.identifier = '/2020/11/05/20%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD1%E7%8F%AD%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95/';
+        this.page.url = 'http://example.com/2020/11/08/ACWING-1118-%E5%88%86%E6%88%90%E4%BA%92%E8%B4%A8%E7%BB%84-DFS/';
+        this.page.identifier = '/2020/11/08/ACWING-1118-%E5%88%86%E6%88%90%E4%BA%92%E8%B4%A8%E7%BB%84-DFS/';
       };
       function loadDisqus() {
         (function () {
@@ -431,7 +469,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "20级人工智能1班编程能力测试(已结束)&nbsp;",
+        "ACWING.1118 分成互质组 DFS&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
