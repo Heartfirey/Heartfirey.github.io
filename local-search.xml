@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>2020.11.29 模拟赛解题报告</title>
+    <link href="/2020/11/30/2020-11-29-%E6%A8%A1%E6%8B%9F%E8%B5%9B%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/"/>
+    <url>/2020/11/30/2020-11-29-%E6%A8%A1%E6%8B%9F%E8%B5%9B%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/</url>
+    
+    <content type="html"><![CDATA[<h1 id="2020-11-29-模拟赛解题报告"><a href="#2020-11-29-模拟赛解题报告" class="headerlink" title="2020.11.29 模拟赛解题报告"></a>2020.11.29 模拟赛解题报告</h1><h2 id="1-锯齿文本"><a href="#1-锯齿文本" class="headerlink" title="1.锯齿文本"></a>1.锯齿文本</h2><p>题目分析：题目要求按锯齿形状逐行递增递减的输出字符，那么就涉及两个状态量：递增控制、递减控制，由于递增的上限是固定的，我们只需设置一个循环，循环的自增量用变量表示，对于递增的过程，每轮循环结束后的增量为1，递减则为-1。那么问题就被简化成了独立输出每一行字符的问题。</p><h3 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h3><pre><code class="hljs python">a = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())n = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())sj = <span class="hljs-string">&quot;JXNU &quot;</span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">printjxnu</span>():</span>    cnt = <span class="hljs-number">0</span>    flag = <span class="hljs-number">1</span>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, n):        <span class="hljs-keyword">if</span>(cnt == <span class="hljs-number">1</span>): flag = <span class="hljs-number">1</span>        <span class="hljs-keyword">if</span>(cnt == a): flag = <span class="hljs-number">-1</span>        cnt += flag        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, cnt): print(sj, end = <span class="hljs-string">&quot;&quot;</span>)        print()printjxnu()exit()</code></pre><h3 id="C-C-："><a href="#C-C-：" class="headerlink" title="C/C++："></a>C/C++：</h3><pre><code class="hljs plain">不想写了，，，自己根据Python的代码想想</code></pre><h2 id="2-HelloWorld"><a href="#2-HelloWorld" class="headerlink" title="2.HelloWorld!"></a>2.HelloWorld!</h2><p>题目分析：显然，给出的字符串都固定了，只需要转换大小写即可。至于插入AI，在循环输出的时候判断一下索引的位置即可。</p><h3 id="Python代码："><a href="#Python代码：" class="headerlink" title="Python代码："></a>Python代码：</h3><pre><code class="hljs python">a = <span class="hljs-built_in">str</span>(<span class="hljs-built_in">input</span>())<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(a)):    <span class="hljs-keyword">if</span>(i == <span class="hljs-number">0</span>): print(a[i].upper(), end = <span class="hljs-string">&quot;&quot;</span>)    <span class="hljs-keyword">elif</span>(i == <span class="hljs-number">5</span>): print(a[i].upper(), end = <span class="hljs-string">&quot;&quot;</span>)    <span class="hljs-keyword">else</span>: print(a[i].lower(), end = <span class="hljs-string">&quot;&quot;</span>)    <span class="hljs-keyword">if</span>(i == <span class="hljs-number">4</span>): print(<span class="hljs-string">&quot;AI&quot;</span>, end = <span class="hljs-string">&quot;&quot;</span>)</code></pre><h3 id="C-C-C自行修改-："><a href="#C-C-C自行修改-：" class="headerlink" title="C/C++:(C自行修改)："></a>C/C++:(C自行修改)：</h3><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><span class="hljs-function"></span>&#123;    <span class="hljs-built_in">string</span> str;    <span class="hljs-built_in">cin</span> &gt;&gt; str;    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; str.size(); i++)&#123;        <span class="hljs-keyword">if</span>(i == <span class="hljs-number">0</span>) str[i] = <span class="hljs-built_in">toupper</span>(str[i]);        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(i == <span class="hljs-number">5</span>)  str[i] = <span class="hljs-built_in">toupper</span>(str[i]);        <span class="hljs-keyword">else</span> str[i] = <span class="hljs-built_in">tolower</span>(str[i]);        <span class="hljs-built_in">cout</span> &lt;&lt; str[i];        <span class="hljs-keyword">if</span>(i == <span class="hljs-number">4</span>) <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;AI&quot;</span>;    &#125;&#125;</code></pre><h2 id="3-求a-aa-aaa…"><a href="#3-求a-aa-aaa…" class="headerlink" title="3.求a * aa * aaa…"></a>3.求a * aa * aaa…</h2><p>题目分析：模拟产生2、22、222的过程即可</p><h3 id="Python："><a href="#Python：" class="headerlink" title="Python："></a>Python：</h3><pre><code class="hljs python">n = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<span class="hljs-built_in">sum</span> = <span class="hljs-number">0</span>k = <span class="hljs-number">1</span><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, n):    <span class="hljs-built_in">sum</span> = <span class="hljs-built_in">sum</span> * <span class="hljs-number">10</span> + <span class="hljs-number">2</span>    k *= <span class="hljs-built_in">sum</span>print(k)</code></pre><h3 id="C-C-：-C自行修改-："><a href="#C-C-：-C自行修改-：" class="headerlink" title="C/C++：(C自行修改)："></a>C/C++：(C自行修改)：</h3><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string&gt;</span></span><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cmath&gt;</span></span><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><span class="hljs-function"></span>&#123;    <span class="hljs-comment">//freopen(&quot;4.in&quot;, &quot;r&quot;, stdin);</span>    <span class="hljs-comment">//freopen(&quot;4.out&quot;, &quot;w&quot;, stdout);</span>    <span class="hljs-keyword">int</span> n, sum = <span class="hljs-number">0</span>, k = <span class="hljs-number">1</span>;    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;        sum = sum * <span class="hljs-number">10</span> + <span class="hljs-number">2</span>;        k *= sum;    &#125;    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>, k);    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;</code></pre><h2 id="4-沙漏"><a href="#4-沙漏" class="headerlink" title="4.沙漏"></a>4.沙漏</h2><pre><code class="hljs python">N=<span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())c=<span class="hljs-built_in">input</span>()<span class="hljs-comment">#读入字符</span><span class="hljs-keyword">if</span> N&lt;=<span class="hljs-number">6</span>: <span class="hljs-comment">#N&lt;=6时直接特判输出</span>    print(c)    print(N<span class="hljs-number">-1</span>)<span class="hljs-keyword">else</span>:    h=<span class="hljs-built_in">int</span>(((N+<span class="hljs-number">1</span>)/<span class="hljs-number">2</span>)**<span class="hljs-number">0.5</span>)<span class="hljs-comment">#这里自己推一遍行数h和N的关系，慢慢推别慌，就数学规律</span>        <span class="hljs-comment">#打印第一个倒三角形</span>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,h):        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,i):            print(<span class="hljs-string">&quot; &quot;</span>,end=<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#输出空格</span>        <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*(h-i)<span class="hljs-number">-1</span>):            print(c,end=<span class="hljs-string">&quot;&quot;</span>)        print()            <span class="hljs-comment">#打印第二个正的三角形</span>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,h):        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,h-i<span class="hljs-number">-1</span>):            print(<span class="hljs-string">&quot; &quot;</span>,end=<span class="hljs-string">&quot;&quot;</span>)        <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>):            print(c,end=<span class="hljs-string">&quot;&quot;</span>)        print()            <span class="hljs-comment">#输出剩下的</span>    print(N<span class="hljs-number">-2</span>*h*h+<span class="hljs-number">1</span>)</code></pre><h2 id="5-在线环境测试"><a href="#5-在线环境测试" class="headerlink" title="5.在线环境测试"></a>5.在线环境测试</h2><p>本题目没有题解~</p><h2 id="6-I-LOVE-AI"><a href="#6-I-LOVE-AI" class="headerlink" title="6.I LOVE AI"></a>6.I LOVE AI</h2><p>太简单了，没法分析了。。。直接上代码</p><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><pre><code class="hljs python">a =  <span class="hljs-string">&quot;I Love AI&quot;</span><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> a:print(i)</code></pre><h3 id="C-C-：-C自行修改头文件，去除命名空间"><a href="#C-C-：-C自行修改头文件，去除命名空间" class="headerlink" title="C/C++：(C自行修改头文件，去除命名空间)"></a>C/C++：(C自行修改头文件，去除命名空间)</h3><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><span class="hljs-function"></span>&#123;    <span class="hljs-comment">//freopen(&quot;1.in&quot;, &quot;r&quot;, stdin);</span>    <span class="hljs-comment">//freopen(&quot;1.out&quot;, &quot;w&quot;, stdout);</span>    <span class="hljs-built_in">string</span> a = <span class="hljs-string">&quot;I Love AI&quot;</span>;    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; a.size(); i++)        <span class="hljs-built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="hljs-built_in">endl</span>;    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;</code></pre>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ACWING.1118 分成互质组 DFS</title>
     <link href="/2020/11/08/ACWING-1118-%E5%88%86%E6%88%90%E4%BA%92%E8%B4%A8%E7%BB%84-DFS/"/>
     <url>/2020/11/08/ACWING-1118-%E5%88%86%E6%88%90%E4%BA%92%E8%B4%A8%E7%BB%84-DFS/</url>
@@ -88,25 +101,6 @@
   
   
   <entry>
-    <title>欢迎来到Heartfirey的博客！</title>
-    <link href="/2020/11/05/hello-world/"/>
-    <url>/2020/11/05/hello-world/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Welcome！"><a href="#Welcome！" class="headerlink" title="Welcome！"></a>Welcome！</h1><h2 id="Heartfirey"><a href="#Heartfirey" class="headerlink" title="Heartfirey"></a>Heartfirey</h2><blockquote><p> 目前正在维护的项目：</p></blockquote><blockquote><p>已经停止维护的项目：</p><p>1.Elect Media Control Center</p><p>这是一个多媒体管理系统，本打算融入FluentDesign的设计规范，并添加局域网互联的功能，但是由于时间原因，鸽了鸽了</p><p>2.图书管理系统</p><p>只是暂时停止更细，以后会考虑扩大开发规模并融入更友好的设计，但是，，，先鸽了…</p><p>3.参与开发的其他Space Technology项目，由于工作室解散，这些项目随机废除并不再开源</p><p>4.学生管理系统</p><p>写着玩的。。。</p></blockquote>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Default</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>C语言-位运算</title>
     <link href="/2020/11/04/C%E8%AF%AD%E8%A8%80-%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     <url>/2020/11/04/C%E8%AF%AD%E8%A8%80-%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
@@ -118,6 +112,25 @@
     <tags>
       
       <tag>C 语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>欢迎来到Heartfirey的博客！</title>
+    <link href="/2020/09/01/hello-world/"/>
+    <url>/2020/09/01/hello-world/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Welcome！"><a href="#Welcome！" class="headerlink" title="Welcome！"></a>Welcome！</h1><h2 id="Heartfirey"><a href="#Heartfirey" class="headerlink" title="Heartfirey"></a>Heartfirey</h2><blockquote><p> 目前正在维护的项目：</p></blockquote><blockquote><p>已经停止维护的项目：</p><p>1.Elect Media Control Center</p><p>这是一个多媒体管理系统，本打算融入FluentDesign的设计规范，并添加局域网互联的功能，但是由于时间原因，鸽了鸽了</p><p>2.图书管理系统</p><p>只是暂时停止更细，以后会考虑扩大开发规模并融入更友好的设计，但是，，，先鸽了…</p><p>3.参与开发的其他Space Technology项目，由于工作室解散，这些项目随机废除并不再开源</p><p>4.学生管理系统</p><p>写着玩的。。。</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Default</tag>
       
     </tags>
     
