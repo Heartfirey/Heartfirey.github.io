@@ -19,6 +19,8 @@ redirect_from:
 
 My name is HeartFireY, and I am from Jiangxi Normal University, mainly engaged in AI related research. Also, I am the 9th president of the Association of Computer Science in Jiangxi Normal University. Welcome to follow me on GitHub!
 
+I am currently working on research related to medical image processing.
+
  <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
@@ -47,13 +49,19 @@ None
 - *20 - 21 Novermber, 2021*, **Bronze Medal**, The 46th Asia Kunming Regional Contest
 - *20 Novermber, 2022*, **Silver Medal**, 2022 China Collegiate Programming Contest, Mianyang Site
 - *30 October, 2022*, **Bronze Medal**, 2022 China Collegiate Programming Contest, Guilin Site
+- *26 April, 2023*, **Bronze Medal**, Huawei Cup The 2022 ICPC Asia-East Continent Final Contest (Shanghai, China)
 
 # 📖 Educations
 - *2020.09 - 2024.06*, dept. of **Artificial Intelligence**, Jiangxi Normal University, School of Computer and Information Engineering. 
 
 # 💬 Invited Talks
-- None长途
+- None
 
 # 💻 Internships
 - *2020.11 - now*, **Member**, Association of Computer Science, Jiangxi Normal University.
 - *2021.10 - 2022.11*, **Chairman**, Association of Computer Science, Jiangxi Normal University.
+
+# 📕 Work Experience
+- *2021.10*, *Undertaker && Jury && Technical Advisor*, 2021 "Xinfeng Cup" Jiangxi Normal University Collegiate Programming Contest.
+- *2022.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2022 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
+- *2023.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2023 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
