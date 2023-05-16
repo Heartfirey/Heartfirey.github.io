@@ -42,14 +42,16 @@ None
 
 ### 🎈 XCPC Awards
 
-- *03 -04 December, 2022*, **Silver Medal**, The 47th Asia Hangzhou Regional Contest
+- *14 March, 2023*, **Golden Medal(with 5-th place)**, The 2023 ICPC China Shaanxi National Invitational Contest
+- *26 April, 2023*, **Bronze Medal**, Huawei Cup The 2022 ICPC Asia-East Continent Final Contest (Shanghai, China)
+- *03 - 04 December, 2022*, **Silver Medal**, The 47th Asia Hangzhou Regional Contest
 - *12 - 13 December, 2022*, **Silver Medal**, The 47th Asia Xi'an Regional Contest
 - *20 July, 2022*, **Bronze Medal**, The 2021 (46th) ICPC Asia-East Continent Final (Xi'an, China)
 - *16 - 17 April, 2022*, **Silver Medal**, The 46th Asia Kunming Regional Contest
 - *20 - 21 Novermber, 2021*, **Bronze Medal**, The 46th Asia Kunming Regional Contest
 - *20 Novermber, 2022*, **Silver Medal**, 2022 China Collegiate Programming Contest, Mianyang Site
 - *30 October, 2022*, **Bronze Medal**, 2022 China Collegiate Programming Contest, Guilin Site
-- *26 April, 2023*, **Bronze Medal**, Huawei Cup The 2022 ICPC Asia-East Continent Final Contest (Shanghai, China)
+
 
 # 📖 Educations
 - *2020.09 - 2024.06*, dept. of **Artificial Intelligence**, Jiangxi Normal University, School of Computer and Information Engineering. 
