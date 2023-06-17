@@ -25,20 +25,20 @@ I am currently working on research related to medical image processing.
 
 
 # 🔥 News
-- 
+- I got **Golden Medal** at the **The 2023 ICPC China Shaanxi National Invitational Contest** (2023.04.13).
 
 # 📝 Publications 
 
 None
 
-# 🎖 Honors and Awards
-- *2022.12* National Scholarship (国家奖学金)
+# 🏆 Honors and Awards
+- *2022.12*  National Scholarship (国家奖学金)
 - *2022.10*  Jiangxi Normal University Comprehensive Quality Scholarship- Second Class (江西师范大学二等综合素质奖学金)
-- *2021.10* Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
-- *2022.10* Jiangxi Normal University - Merit Student (江西师范大学三好学生-2022)
+- *2021.10*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
+- *2022.10*  Jiangxi Normal University - Merit Student (江西师范大学三好学生-2022)
 - *2021.10* Jiangxi Normal University - Merit Student (江西师范大学三好学生-2021)
-- *2022* Jiangxi Normal University - Outstanding Communist Youth League Cadres (江西师范大学优秀共青团干部)
-- *2021* Jiangxi Normal University - Excellent Club Cadres (江西师范大学2021年度“优秀社团干部”)
+- *2022  Jiangxi Normal University - Outstanding Communist Youth League Cadres (江西师范大学优秀共青团干部)
+- *2021*  Jiangxi Normal University - Excellent Club Cadres (江西师范大学2021年度“优秀社团干部”)
 
 ### 🎈 XCPC Awards
 
@@ -64,6 +64,9 @@ None
 - *2021.10 - 2022.11*, **Chairman**, Association of Computer Science, Jiangxi Normal University.
 
 # 📕 Work Experience
-- *2021.10*, *Undertaker && Jury && Technical Advisor*, 2021 "Xinfeng Cup" Jiangxi Normal University Collegiate Programming Contest.
-- *2022.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2022 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
+
+- *2023.05*, *Technical Staff*, 2023 Guangxi Provincial Collegiate Programming Contest
+- *2023.05*, *Technical Advisor && JXCPC Committee*, 2023 (ICPC) Jiangxi Provincial Contest
 - *2023.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2023 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
+- *2022.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2022 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
+- *2021.10*, *Undertaker && Jury && Technical Advisor*, 2021 "Xinfeng Cup" Jiangxi Normal University Collegiate Programming Contest.
