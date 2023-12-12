@@ -25,7 +25,11 @@ I am currently working on research related to computer vision(Few-shot Object De
 
 
 # 🔥 News
-- I got **Golden Medal** at the **The 2023 ICPC China Shaanxi National Invitational Contest** (2023.04.13).
+- 🏆 I got **Golden Medal** at the **The 2023(48-th) ICPC Asia Hangzhou Regional Contest** (2023.12.10). 
+
+  > ✨ Noted that this is the **FIRST GOLDEN MEDAL** **of Jiangxi Normal University** in **ICPC REGIONAL CONTEST**!
+
+- 🏆 I got **Golden Medal** at the **The 2023 ICPC China Shaanxi National Invitational Contest** (2023.04.13).
 
 # 📝 Publications 
 
@@ -42,6 +46,8 @@ None
 
 ### 🎈 XCPC Awards
 
+- *09-10 December, 2023*, **Gloden Medal**, The 2023(48-th) ICPC Asia Hangzhou Regional Contest
+- *04-05 Novermber, 2023*, **Bronze Medal**, The 2023(48-th) ICPC Asia Nanjing Regional Contest
 - *14 March, 2023*, **Golden Medal(with 5-th place)**, The 2023 ICPC China Shaanxi National Invitational Contest
 - *26 April, 2023*, **Bronze Medal**, Huawei Cup The 2022 ICPC Asia-East Continent Final Contest (Shanghai, China)
 - *03 - 04 December, 2022*, **Silver Medal**, The 47th Asia Hangzhou Regional Contest
