@@ -37,8 +37,11 @@ None
 
 # 🏆 Honors and Awards
 - *2022.12*  National Scholarship (国家奖学金)
+- 2023.11  Jiangxi Normal University Outstanding Graduates（江西师范大学优秀毕业生）
+- *2023.10*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
 - *2022.10*  Jiangxi Normal University Comprehensive Quality Scholarship- Second Class (江西师范大学二等综合素质奖学金)
 - *2021.10*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
+- *2023.10*  Jiangxi Normal University - Merit Student (江西师范大学三好学生-2023)
 - *2022.10*  Jiangxi Normal University - Merit Student (江西师范大学三好学生-2022)
 - *2021.10* Jiangxi Normal University - Merit Student (江西师范大学三好学生-2021)
 - *2022  Jiangxi Normal University - Outstanding Communist Youth League Cadres (江西师范大学优秀共青团干部)
