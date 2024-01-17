@@ -19,12 +19,16 @@ redirect_from:
 
 My name is Weiqi Yan, I am a pre-graduate student of Xiamen University, class of 2024, and I am conducting my studies in the Media Analysis and Computing Group (MAC) at Xiamen University. Also, I am the 9th president of the Association of Computer Science in Jiangxi Normal University. Welcome to follow me on GitHub!
 
-I am currently working on research related to computer vision(Few-shot Object Detection, FSOD).
+I am currently working on research related to computer vision(Object Detection Related).
 
  <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 🔥 News
+- 🏆 I got **Silver Medal** at the **The 2023(48-th) ICPC Asia-East Continent Final** (2024.01.14).
+
+  > ✨ Noted that this is the **FIRST EC-FINAL SILVER MEDAL** **of Jiangxi Province**!
+
 - 🏆 I got **Golden Medal** at the **The 2023(48-th) ICPC Asia Hangzhou Regional Contest** (2023.12.10). 
 
   > ✨ Noted that this is the **FIRST GOLDEN MEDAL** **of Jiangxi Normal University** in **ICPC REGIONAL CONTEST**!
@@ -49,6 +53,7 @@ None
 
 ### 🎈 XCPC Awards
 
+- *13-15 January, 2024*, **Silver Medal**, The 2023(48-th) ICPC Asia-East Continent Final(Huawei Cup)
 - *09-10 December, 2023*, **Gloden Medal**, The 2023(48-th) ICPC Asia Hangzhou Regional Contest
 - *04-05 Novermber, 2023*, **Bronze Medal**, The 2023(48-th) ICPC Asia Nanjing Regional Contest
 - *14 March, 2023*, **Golden Medal(with 5-th place)**, The 2023 ICPC China Shaanxi National Invitational Contest
