@@ -16,9 +16,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Weiqi Yan"
   avatar           : "images/android-chrome-512x512.jpeg"
-  bio              : "Jiangxi Normal University"
-  location         : "Nanchang, Jiangxi, China"
-  employer         : "JXNU-ACS"
+  bio              : "Xiamen University"
+  location         : "Xiamen, Fujian, China"
+  employer         : "MAC Lab"
   pubmed           : 
   googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "heartfirey@outlook.com"

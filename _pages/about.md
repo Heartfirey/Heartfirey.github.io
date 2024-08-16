@@ -33,8 +33,6 @@ I am currently working on research related to computer vision(Object Detection R
 
   > ✨ Noted that this is the **FIRST GOLDEN MEDAL** **of Jiangxi Normal University** in **ICPC REGIONAL CONTEST**!
 
-- 🏆 I got **Golden Medal** at the **The 2023 ICPC China Shaanxi National Invitational Contest** (2023.04.13).
-
 # 📝 Publications 
 
 None
@@ -58,17 +56,18 @@ None
 - *04-05 Novermber, 2023*, **Bronze Medal**, The 2023(48-th) ICPC Asia Nanjing Regional Contest
 - *14 March, 2023*, **Golden Medal(with 5-th place)**, The 2023 ICPC China Shaanxi National Invitational Contest
 - *26 April, 2023*, **Bronze Medal**, Huawei Cup The 2022 ICPC Asia-East Continent Final Contest (Shanghai, China)
-- *03 - 04 December, 2022*, **Silver Medal**, The 47th Asia Hangzhou Regional Contest
-- *12 - 13 December, 2022*, **Silver Medal**, The 47th Asia Xi'an Regional Contest
+- *03-04 December, 2022*, **Silver Medal**, The 47th Asia Hangzhou Regional Contest
+- *12-13 December, 2022*, **Silver Medal**, The 47th Asia Xi'an Regional Contest
 - *20 July, 2022*, **Bronze Medal**, The 2021 (46th) ICPC Asia-East Continent Final (Xi'an, China)
-- *16 - 17 April, 2022*, **Silver Medal**, The 46th Asia Kunming Regional Contest
-- *20 - 21 Novermber, 2021*, **Bronze Medal**, The 46th Asia Kunming Regional Contest
+- *16-17 April, 2022*, **Silver Medal**, The 46th Asia Kunming Regional Contest
+- *20-21 Novermber, 2021*, **Bronze Medal**, The 46th Asia Kunming Regional Contest
 - *20 Novermber, 2022*, **Silver Medal**, 2022 China Collegiate Programming Contest, Mianyang Site
 - *30 October, 2022*, **Bronze Medal**, 2022 China Collegiate Programming Contest, Guilin Site
 
 
 # 📖 Educations
-- *2020.09 - 2024.06*, dept. of **Artificial Intelligence**, Jiangxi Normal University, School of Computer and Information Engineering. 
+- 2024.09 - Now, dept. of **Artificial Intelligence, School of Informatics, Xiamen University, China.
+- *2020.09 - 2024.06*, dept. of **Artificial Intelligence**, School of Computer and Information Engineering, Jiangxi Normal University, China. 
 
 # 💬 Invited Talks
 - None
@@ -80,8 +79,6 @@ None
 
 # 📕 Working Experiences
 
+- *2024.05*, *Technical Advisor && JXCPC Committee*, 2024 (ICPC) Jiangxi Provincial Contest
 - *2023.05*, *Technical Staff*, 2023 Guangxi Provincial Collegiate Programming Contest
 - *2023.05*, *Technical Advisor && JXCPC Committee*, 2023 (ICPC) Jiangxi Provincial Contest
-- *2023.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2023 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
-- *2022.03*, *Organizer && Undertaker && Jury && Technical Advisor*, 2022 "TELECOM-ESURFING CUP" Jiangxi Normal University Collegiate Programming Contest.
-- *2021.10*, *Undertaker && Jury && Technical Advisor*, 2021 "Xinfeng Cup" Jiangxi Normal University Collegiate Programming Contest.
