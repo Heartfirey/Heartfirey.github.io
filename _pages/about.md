@@ -23,19 +23,29 @@ I am currently working on research related to computer vision(Object Detection R
 
  <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
-
 # 🔥 News
+
+- 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been accepted by **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025** (2025.02.27)
+
 - 🏆 I got **Silver Medal** at the **The 2023(48-th) ICPC Asia-East Continent Final** (2024.01.14).
 
   > ✨ Noted that this is the **FIRST EC-FINAL SILVER MEDAL** **of Jiangxi Province**!
 
-- 🏆 I got **Golden Medal** at the **The 2023(48-th) ICPC Asia Hangzhou Regional Contest** (2023.12.10). 
-
-  > ✨ Noted that this is the **FIRST GOLDEN MEDAL** **of Jiangxi Normal University** in **ICPC REGIONAL CONTEST**!
-
 # 📝 Publications 
 
-None
+<!-- ******************* paper begin ******************* -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper_face/cvpr2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+**UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning**
+
+**Weiqi Yan**, Lvhai Chen, Huaijia Ko, Shengchuan Zhang, Yan Zhang, Liujuan Cao
+
+*IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2025*
+
+[**Code Release**](https://github.com/Heartfirey/UCOD-DPL)
+</div>
+</div>
+<!-- ******************* paper end ******************* -->
 
 # 🏆 Honors and Awards
 - *2022.12*  National Scholarship (国家奖学金)
