@@ -24,18 +24,15 @@ I am currently working on research related to computer vision(Object Detection R
 
 # 🔥 News
 
+- 📑 Our work "SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection" has been accepted by the **34th International Joint Conference on Artificial Intelligence (IJCAI 2025)**, (2025.04.29)
 - 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been selected to be presented as a ✨**highlight** in CVPR2025！(2025.04.05)
 - 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been accepted by **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025** (2025.02.27)
-- 🏆 I got **Silver Medal** at the **The 2023(48-th) ICPC Asia-East Continent Final** (2024.01.14).
-
-  > ✨ Noted that this is the **FIRST EC-FINAL SILVER MEDAL** **of Jiangxi Province**!
-  >
 
 # 📝 Publications
 
 <!-- ******************* paper begin ******************* -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper_face/cvpr2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper_face/cvpr2025_UCOD-DPL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 **UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning**
 
@@ -47,6 +44,20 @@ I am currently working on research related to computer vision(Object Detection R
 
 </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/paper_face/ijcai2025_SCOUT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+**SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection**
+
+**Weiqi Yan**, Lvhai Chen, Shengchuan Zhang, Yan Zhang, Liujuan Cao
+
+*34th International Joint Conference on Artificial Intelligence, 2025*
+
+[**Code Release**](https://github.com/Heartfirey/SCOUT)
+
+</div>
+</div>
+
 <!-- ******************* paper end ******************* -->
 
 
