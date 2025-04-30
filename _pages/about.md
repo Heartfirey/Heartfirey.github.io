@@ -32,7 +32,14 @@ I am currently working on research related to computer vision(Object Detection R
 
 <!-- ******************* paper begin ******************* -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/paper_face/cvpr2025_UCOD-DPL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CVPR 2025</div>
+<img src='images/paper_face/cvpr2025_UCOD-DPL.png' alt="sym" width="100%">
+</div>
+<div class="conference-level-badge ccf-a">CCF-A</div>
+</div>
 <div class='paper-box-text' markdown="1">
 **UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning**
 
@@ -45,7 +52,7 @@ I am currently working on research related to computer vision(Object Detection R
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/paper_face/ijcai2025_SCOUT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/paper_face/ijcai2025_SCOUT.png' alt="sym" width="100%"><div class="conference-level-badge ccf-a">CCF-A</div></div></div>
 <div class='paper-box-text' markdown="1">
 **SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection**
 
