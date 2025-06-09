@@ -54,6 +54,7 @@ author:
 
 # Reading Files
 include:
+  - project_page
   - .htaccess
   - _pages
   - files
