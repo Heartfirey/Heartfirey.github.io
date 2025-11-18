@@ -16,16 +16,16 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Weiqi Yan, I am a pre-graduate student of Xiamen University, class of 2024, and I am conducting my studies in the Media Analysis and Computing Group (MAC) at Xiamen University. Also, I am the 9th president of the Association of Computer Science in Jiangxi Normal University. Welcome to follow me on GitHub!
+My name is Weiqi Yan, I am a pre-graduate student of Xiamen University, class of 2024, and I am conducting my studies in the Media Analysis and Computing Group (MAC) at Xiamen University. Welcome to follow me on GitHub!
 
-I am currently working on research related to computer vision(Object Detection Related).
+I am currently working on research related to **Computer Vision** and **Multimodal Learning**. And I currently serve as a reviewer for journals/conferences including TPAMI.
 
- <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
+ <a href='https://scholar.google.com/citations?user=UrqtmbEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 # 🔥 News
 
 - 📑 Our work "SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection" has been accepted by the **34th International Joint Conference on Artificial Intelligence (IJCAI 2025)**, (2025.04.29)
-- 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been selected to be presented as a ✨**highlight** in CVPR2025！(2025.04.05)
+- 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been selected to be presented as a ✨**Highlight** in CVPR2025！(2025.04.05)
 - 📑 Our work "UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning" has been accepted by **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025** (2025.02.27)
 
 # 📝 Publications
@@ -72,12 +72,13 @@ I am currently working on research related to computer vision(Object Detection R
 
 # 🏆 Honors and Awards
 
-- *2022.12*  National Scholarship (国家奖学金)
-- 2023.11  Jiangxi Normal University Outstanding Graduates（江西师范大学优秀毕业生）
-- *2021-2024*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
+- *2025.12*  National Scholarship (研究生国家奖学金)
+- *2022.12*  National Scholarship (本科生国家奖学金)
+- *2023.11*  Jiangxi Normal University Outstanding Graduates（江西师范大学优秀毕业生）
+<!-- - *2021-2024*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
 - *2021-2024* Jiangxi Normal University - Merit Student (江西师范大学三好学生)
 - *2022*  Jiangxi Normal University - Outstanding Communist Youth League Cadres (江西师范大学优秀共青团干部)
-- *2021*  Jiangxi Normal University - Excellent Club Cadres (江西师范大学2021年度“优秀社团干部”)
+- *2021*  Jiangxi Normal University - Excellent Club Cadres (江西师范大学2021年度“优秀社团干部”) -->
 
 ### 🎈 XCPC Awards
 
@@ -96,18 +97,18 @@ I am currently working on research related to computer vision(Object Detection R
 
 # 📖 Educations
 
-- 2024.09 - Now, dept. of **Artificial Intelligence, School of Informatics, Xiamen University, China.
+- *2024.09 - Now*, dept. of **Artificial Intelligence**, School of Informatics, Xiamen University, China.
 - *2020.09 - 2024.06*, dept. of **Artificial Intelligence**, School of Computer and Information Engineering, Jiangxi Normal University, China.
 
-# 💬 Invited Talks
+<!-- # 💬 Invited Talks
 
-- None
+-  -->
 
 # 💻 Internships
 
-- *2023.11 - now*, **Member & Master Student**, Media Analysis and Computing Group, Xiamen University.
-- *2020.11 - now*, **Member**, Association of Computer Science, Jiangxi Normal University.
-- *2021.10 - 2022.11*, **Chairman**, Association of Computer Science, Jiangxi Normal University.
+- *2023.11 - now*, **Member & Master Student**, [Media Analysis and Computing Group](https://mac.xmu.edu.cn), Xiamen University.
+- *2021.10 - 2022.11*, **Chair**, Association of Computer Science, Jiangxi Normal University.
+- *2020.11 - 2024.06*, **Member**, Association of Computer Science, Jiangxi Normal University.
 
 # 📕 Working Experiences
 
