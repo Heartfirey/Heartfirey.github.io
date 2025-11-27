@@ -74,11 +74,9 @@ I am currently working on research related to **Computer Vision** and **Multimod
 
 - *2025.12*  National Scholarship (研究生国家奖学金)
 - *2022.12*  National Scholarship (本科生国家奖学金)
+- *2025.09*  Xiamen University - Outstanding Merit Student (厦门大学优秀三好学生)
 - *2023.11*  Jiangxi Normal University Outstanding Graduates（江西师范大学优秀毕业生）
-<!-- - *2021-2024*  Jiangxi Normal University Comprehensive Quality Scholarship- First Class (江西师范大学一等综合素质奖学金)
-- *2021-2024* Jiangxi Normal University - Merit Student (江西师范大学三好学生)
-- *2022*  Jiangxi Normal University - Outstanding Communist Youth League Cadres (江西师范大学优秀共青团干部)
-- *2021*  Jiangxi Normal University - Excellent Club Cadres (江西师范大学2021年度“优秀社团干部”) -->
+
 
 ### 🎈 XCPC Awards
 
