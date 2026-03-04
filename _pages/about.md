@@ -52,6 +52,19 @@ I am currently working on research related to **Computer Vision** and **Multimod
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/paper_face/iclr2026_IEC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+**Test-Time Iterative Error Correction for Efficient Diffusion Models**
+
+Yunshan Zhong, **Weiqi Yan**, Yuxin Zhang
+
+*The 14th International Conference on Learning Representations (ICLR), 2025*
+
+[**Code Release**](https://github.com/zysxmu/IEC)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/paper_face/ijcai2025_SCOUT.png' alt="sym" width="100%"><div class="conference-level-badge ccf-a">CCF-A</div></div></div>
 <div class='paper-box-text' markdown="1">
 **SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection**
