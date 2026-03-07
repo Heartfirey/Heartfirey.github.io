@@ -52,7 +52,7 @@ I am currently working on research related to **Computer Vision** and **Multimod
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/paper_face/iclr2026_IEC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/paper_face/iclr2026_IEC.png' alt="sym" width="100%"><div class="conference-level-badge ccf-a">CCF-A</div></div></div>
 <div class='paper-box-text' markdown="1">
 **Test-Time Iterative Error Correction for Efficient Diffusion Models**
 
