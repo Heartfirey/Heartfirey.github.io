@@ -65,6 +65,17 @@ Yunshan Zhong, **Weiqi Yan**, Yuxin Zhang
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2026</div><img src='images/paper_face/acmmm_2026_LASA.png' alt="sym" width="100%"><div class="conference-level-badge ccf-a">CCF-A</div></div></div>
+<div class='paper-box-text' markdown="1">
+**LASA: Language-and-Source-Anchored Alignment for Domain Generalized Semantic Segmentation**
+
+Jinhong Zhu, **Weiqi Yan**, Shengchuan Zhang, Liujuan Cao
+
+*34th ACM International Conference on Multimedia, 2026*
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/paper_face/ijcai2025_SCOUT.png' alt="sym" width="100%"><div class="conference-level-badge ccf-a">CCF-A</div></div></div>
 <div class='paper-box-text' markdown="1">
 **SCOUT: Semi-supervised Camouflaged Object Detection by Utilizing Text and Adaptive Data Selection**
