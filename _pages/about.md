@@ -16,9 +16,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Weiqi Yan, I am a pre-graduate student of Xiamen University, class of 2024, and I am conducting my studies in the Media Analysis and Computing Group (MAC) at Xiamen University. Welcome to follow me on GitHub!
+My name is Weiqi Yan, I am a phD student of Xiamen University, class of 2026, and I am conducting my studies in the Media Analysis and Computing Group (MAC) at Xiamen University. I am currently interning at <img src="images/icon/tencent.svg"/> TEG <img src="images/icon/hunyuan.svg"/>. Welcome to follow me on GitHub! 
 
-I am currently working on research related to **Computer Vision** and **Multimodal Learning**. And I currently serve as a reviewer for journals/conferences including TPAMI.
+I am currently working on research related to **Computer Vision** and **Multimodal Learning**. And I currently serve as a reviewer for journals/conferences including TPAMI, ICML and ACMMM.
 
  <a href='https://scholar.google.com/citations?user=UrqtmbEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
