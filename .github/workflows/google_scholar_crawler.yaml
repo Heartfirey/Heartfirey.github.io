@@ -17,17 +17,20 @@ jobs:
     - name: Install Reqs
       run: |
         sudo apt-get install python3-setuptools
-    - name: Run
+        python3 -m pip install -r google_scholar_crawler/requirements.txt
+    - name: Fetch citation data
+      # scholarly 1.5.1 can retry 403 responses indefinitely, even with set_retries.
+      timeout-minutes: 5
+      working-directory: google_scholar_crawler
+      run: python3 -u main.py
+      env:
+        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+    - name: Publish citation data
+      working-directory: google_scholar_crawler/results
       run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
         git init
         git config --local user.name "${GITHUB_ACTOR}"
         export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
         git add *.json
         git commit -m "Updated Citation Data"
         git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}

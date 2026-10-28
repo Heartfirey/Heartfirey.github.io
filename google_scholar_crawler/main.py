@@ -3,9 +3,22 @@ import jsonpickle
 import json
 from datetime import datetime
 import os
+import logging
 
-author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+scholarly.set_logger(True)
+scholarly.set_timeout(15)
+scholarly.set_retries(2)
+
+scholar_id = os.environ.get('GOOGLE_SCHOLAR_ID', '').strip()
+if not scholar_id:
+    raise ValueError('GOOGLE_SCHOLAR_ID must be configured in repository secrets')
+
+logging.info('Fetching Google Scholar author profile')
+author: dict = scholarly.search_author_id(scholar_id)
+logging.info('Fetching citation counts and publications')
 scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+logging.info('Fetch complete; writing citation data')
 name = author['name']
 author['updated'] = str(datetime.now())
 author['publications'] = {v['author_pub_id']:v for v in author['publications']}
